@@ -1,33 +1,33 @@
 # Azure DNS Zone Name Servers Exporter
 
-Dieses PowerShell-Skript exportiert die Namenserver für alle DNS-Zonen in einer Azure-Subscription in eine CSV-Datei.
+This PowerShell script exports the name servers for all DNS zones in an Azure subscription to a CSV file.
 
-## Übersicht
+## Overview
 
-Das Skript führt folgende Schritte aus:
+The script performs the following steps:
 
-1. Stellt sicher, dass eine Azure-Anmeldung vorhanden ist.
-2. Überprüft, ob das Modul `Az.Network` installiert ist, und installiert es bei Bedarf.
-3. Definiert den Pfad zur Ausgabe-CSV-Datei.
-4. Initialisiert ein leeres Array zur Speicherung der Ergebnisse.
-5. Ruft alle DNS-Zonen in der aktuellen Azure-Subscription ab.
-6. Durchläuft jede Zone, extrahiert die Zonen-Namen und die Namenserver, und erstellt ein benutzerdefiniertes Objekt, das diese Informationen enthält.
-7. Fügt das benutzerdefinierte Objekt zum Array hinzu.
-8. Exportiert das Array in eine CSV-Datei.
-9. Gibt den Pfad zur erstellten CSV-Datei aus.
+1. Ensures an Azure login is present.
+2. Checks if the Az.Network module is installed and installs it if necessary.
+3. Defines the path for the output CSV file.
+4. Initializes an empty array to store the results.
+5. Retrieves all DNS zones in the current Azure subscription.
+6. Iterates through each zone, extracts the zone names and name servers, and creates a custom object containing this information.
+7. Adds the custom object to the array.
+8. Exports the array to a CSV file.
+9. Outputs the path to the created CSV file.
 
-## Voraussetzungen
+## Prerequisites
 
 - Azure PowerShell Module (`Az` Modul)
-- Zugriff auf eine Azure-Subscription
+- Access to an Azure subscription
 
-## Ausführung
+## Execution
 
-### In der Azure Cloud Shell
+### In the Azure Cloud Shell
 
-1. Öffnen Sie die [Azure Cloud Shell](https://shell.azure.com).
-2. Stellen Sie sicher, dass Sie im PowerShell-Modus sind.
-3. Kopieren Sie das Skript in die Cloud Shell und führen Sie es aus.
+1. Open the [Azure Cloud Shell](https://shell.azure.com).
+2. Ensure you are in PowerShell mode.
+3. Copy the script into the Cloud Shell and execute it.
 
 ## Copyright
-© 2024 [Indeno GmbH](https://indeno.at). Alle Rechte vorbehalten.
+© 2024 [Indeno GmbH](https://indeno.at). All rights reserved.
